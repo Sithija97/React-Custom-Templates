@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
 import { FormsModule } from '@angular/forms'; //needed for data binding process
+import { HttpClientModule } from '@angular/common/http';  // importing http client
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms'; //needed for data binding process
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule //needed to import to ngModule
+    FormsModule, //needed to import to ngModule
+    HttpClientModule   // importing http client
   ],
   providers: [],
   bootstrap: [AppComponent]
