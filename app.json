@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "adopt-me",
+    "slug": "adopt-me",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyD-XgukIDTQsa7ft47KhF8cduTZkKepUvk",
+          "authDomain": "adopt-me-5eda9.firebaseapp.com",
+          "projectId": "adopt-me-5eda9",
+          "storageBucket": "adopt-me-5eda9.appspot.com",
+          "messagingSenderId": "421312601205",
+          "appId": "1:421312601205:web:f8c33b59b8784d5d52ac3c"
+        }
+      }
+    }
+  }
+}
