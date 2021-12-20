@@ -16,6 +16,7 @@ export default function Add({ navigation }) {
     age: "",
     sex: "",
     contact: "",
+    imgUrl: "",
   };
   const [state, setState] = React.useState(initialstate);
 
@@ -55,6 +56,11 @@ export default function Add({ navigation }) {
         placeholder="contact"
         onChangeText={(text) => setState({ ...state, contact: text })}
         value={state.contact}
+      />
+      <TextInput
+        placeholder="image URL"
+        onChangeText={(text) => setState({ ...state, imgUrl: text })}
+        value={state.imgUrl}
       />
       <Button title="add" onPress={handleSubmit} />
     </SafeAreaView>
