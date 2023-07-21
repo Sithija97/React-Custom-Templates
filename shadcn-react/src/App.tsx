@@ -1,11 +1,14 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
+import { Badge } from "./components/ui/badge";
+import { Button } from "./components/ui/button";
+import "../app/globals.css";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Button>Button</Button>
+      <div>
+        <Button>Click me</Button>
+        <Badge>Badge</Badge>
+      </div>
     </>
   );
 }
