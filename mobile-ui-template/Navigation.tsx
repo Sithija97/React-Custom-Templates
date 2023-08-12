@@ -3,10 +3,7 @@ import { View, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import Login from "./screens/Login";
-import Home from "./screens/Home";
-import Registration from "./screens/Registration";
-import Tips from "./screens/Tips";
+import { Home, Login, Rates, Signup, Welcome } from "./screens";
 
 // Stack
 const HomeStack = createStackNavigator();
@@ -14,7 +11,12 @@ const HomeStack = createStackNavigator();
 const HomeStackGroup = () => {
   return (
     <HomeStack.Navigator screenOptions={{ headerShown: false }}>
-      <HomeStack.Screen name="Registration" component={Registration} />
+      <HomeStack.Screen
+        name="Welcome"
+        component={Welcome}
+        options={{ headerShown: false }}
+      />
+      <HomeStack.Screen name="Signup" component={Signup} />
       <HomeStack.Screen name="Login" component={Login} />
       <HomeStack.Screen name="DrawerGroup" component={DrawerGroup} />
     </HomeStack.Navigator>
@@ -28,7 +30,7 @@ const DrawerGroup = () => {
   return (
     <Drawer.Navigator>
       <Drawer.Screen name="Home" component={Home} />
-      <Drawer.Screen name="Tips" component={Tips} />
+      <Drawer.Screen name="Exchange rates" component={Rates} />
     </Drawer.Navigator>
   );
 };

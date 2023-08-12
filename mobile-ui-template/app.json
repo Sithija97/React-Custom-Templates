@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "safety-app",
-    "slug": "safety-app",
+    "name": "mobile-ui-template",
+    "slug": "mobile-ui-template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

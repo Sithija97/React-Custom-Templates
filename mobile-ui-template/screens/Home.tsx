@@ -1,12 +1,10 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const Tips = () => {
+export const Home = () => {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Tips</Text>
+      <Text>Home</Text>
     </View>
   );
 };
-
-export default Tips;
