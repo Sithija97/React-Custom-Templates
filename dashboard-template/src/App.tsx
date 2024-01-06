@@ -1,4 +1,10 @@
-import { BarChart, Header, Orders, Sidebar, TopCards } from "./components";
+import {
+  BarChart,
+  Header,
+  RecentOrders,
+  Sidebar,
+  TopCards,
+} from "./components";
 
 function App() {
   return (
@@ -8,7 +14,7 @@ function App() {
         <TopCards />
         <div className="p-4 grid md:grid-cols-3 grid-cols-1 gap-4">
           <BarChart />
-          <Orders />
+          <RecentOrders />
         </div>
       </div>
     </Sidebar>
