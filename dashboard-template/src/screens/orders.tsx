@@ -34,14 +34,14 @@ export const Orders = () => {
                     <p className="text-gray-800 text-sm">{order.name.first}</p>
                   </div>
                 </div>
-                <p className="text-gray-600 sm:text-left text-right">
+                <p className="text-gray-600 sm:text-left text-right text-xs">
                   <span
                     className={
                       order.status == "Processing"
-                        ? "bg-green-200 p-2 rounded-lg font-medium"
+                        ? "bg-green-200 py-1 px-2 rounded-lg font-bold"
                         : order.status == "Completed"
-                        ? "bg-blue-200 p-2 rounded-lg font-medium"
-                        : "bg-yellow-200 p-2 rounded-lg font-medium"
+                        ? "bg-blue-200 py-1 px-2 rounded-lg font-bold"
+                        : "bg-yellow-200 py-1 px-2 rounded-lg font-bold"
                     }
                   >
                     {order.status}
