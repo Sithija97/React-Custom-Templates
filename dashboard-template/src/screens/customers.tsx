@@ -6,7 +6,7 @@ export const Customers = () => {
     <div className="bg-gray-100 min-h-screen">
       <div className="flex justify-between p-4">
         <h2 className="font-medium">Customers</h2>
-        <h2 className="font-medium">Welcome Back, Sithija</h2>
+        <h2 className="font-medium">Welcome Back, Sithija Shehara</h2>
       </div>
       <div className="p-4">
         <div className="w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto">
